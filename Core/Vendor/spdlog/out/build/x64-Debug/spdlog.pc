@@ -1,0 +1,13 @@
+prefix=C:/dev/stage/Stage/vendor/spdlog/out/install/x64-Debug
+exec_prefix=${prefix}
+includedir=${prefix}/include
+libdir=${exec_prefix}/lib
+
+Name: libspdlog
+Description: Fast C++ logging library.
+URL: https://github.com/gabime/spdlog
+Version: 1.8.5
+CFlags: -I${includedir} -DSPDLOG_COMPILED_LIB -DSPDLOG_LEVEL_NAME_TRACE="trace" -DSPDLOG_LEVEL_NAME_DEBUG="debug" -DSPDLOG_LEVEL_NAME_INFO="info" -DSPDLOG_LEVEL_NAME_WARNING="warning" -DSPDLOG_LEVEL_NAME_ERROR="error" -DSPDLOG_LEVEL_NAME_CRITICAL="critical" -DSPDLOG_LEVEL_NAME_OFF="off"
+Libs: -L${libdir} -lspdlog -pthread
+Requires: 
+
