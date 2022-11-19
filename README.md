@@ -13,3 +13,5 @@ premake5.exe vs2022
 
 Check [/test](/test/) for examples:
 * Bidirectional reflectance distribution function [/brdf](/test/brdf/)
+![](./test/brdf/Assets/Images/interface.png)
+![](./test/brdf/Assets/Images/brdf.png)
